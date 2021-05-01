@@ -1,0 +1,157 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.body{
+	height: 100%;
+	width: 100%;
+	min-width: 500px;
+	position: absolute;
+}
+.top{
+	display: flex;
+	justify-content: space-between;
+}
+.top .title{
+	display: flex;
+	align-items: center;
+}
+.top .title img{
+	margin-right: 5px;
+}
+.options{
+	display: flex;
+	align-items: flex-start;
+}
+.top button{
+	background-color: white;
+	width: 30px;
+	border: 0;
+	height: 100%;
+	font-size: 1.5em;
+}
+.top button:hover{
+	background-color: lightgray;
+}
+.top button:last-child:hover{
+	background-color: red;
+}
+.menu .item{
+	display: inline;
+	padding: 0 5px
+}
+.item:hover{
+	background-color: #27f5;
+}
+.menu{
+	margin-top: 5px;
+}
+.top-bar{
+	display: flex;
+	justify-content: space-between;
+	background-color: lightgray;
+	padding: 3px;
+	align-items: flex-end;
+}
+.search span{
+	border: 1px solid gray;
+	margin: 10px;
+}
+span button{
+	width: 15px;
+	height: 15px;
+}
+.content{
+	display: flex;
+	height: calc(100% - 190px);
+}
+.left{
+	background-color: lightgray;
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+}
+.right{
+	background-color: white;
+	border:1px solid black;
+	flex-grow: 1;
+}
+.left-options{
+	width: 100%;
+	padding: 5px;
+	overflow-y: auto;
+}
+.left-options .item{
+	display: block;
+	width: 100%;
+	margin: 5px;
+}
+.left .image{
+	min-height: 120px;
+	width: 100px;
+	margin: auto;
+}
+.image img{
+	background-color: white;
+	border-radius: 5px;
+	border:1px solid darkgray;
+	padding: 10px;
+}
+.progress{
+	background-color: lightgray;
+	display: flex;
+	align-items: center;
+	padding: 5px;
+}
+.progressbar{
+	flex-grow: 1;
+	height: 10px;
+	background-color: gray;
+	margin: 15px;
+	border-radius: 5px;
+}
+.status, .controls, .group, .buttons{
+	background-color: lightgray;
+	display: flex;
+}
+.controls{
+	justify-content: space-between;
+	align-items: center;
+}
+.group, .status{
+	align-items: center;
+}
+.playing{
+	height: 20px;
+	border: 1px solid black;
+	flex-grow: 1;
+}
+.speed{
+	border: 1px inset black;
+	margin: 0 5px;
+	padding: 2px;
+}
+.remain{
+	border: 1px inset black;
+	margin: 0 5px;
+	padding: 2px;
+}
+.buttons button{
+	padding: 5px;
+	margin: 2px;
+}
+.group{
+	margin-left: 10px;
+}
+.play{
+	font-size: 1.2em;
+}
+.vol{
+	border-right: 80px solid #555;
+	border-top: 25px solid transparent;
+	height: 2px;
+	width: 200px;
+	margin-right: 20px;
+}
